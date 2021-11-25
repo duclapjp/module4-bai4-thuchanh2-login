@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:insert="/layout::head">
+    <meta charset="UTF-8">
+    <title>Title</title>
+<body>
+
+<h3>View User</h3>
+<p>
+    <a th:href="@{/user/home}">
+        Back to user list
+    </a>
+</p>
+
+<label>Account:</label>
+<label th:text="${user.account}"></label>
+
+
+<label>Password:</label>
+<label th:text="${user.password}"></label>
+
+<label>Name:</label>
+<label th:text="${user.name}"></label>
+
+<label>Email:</label>
+<label th:text="${user.email}"></label>
+<label>Age:</label>
+<label th:text="${user.age}"></label>
+<footer th:insert="/layout::footer">
+</footer>
+</body>
+</html>
